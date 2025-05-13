@@ -1,0 +1,3 @@
+This is where your x509 certification should go. You can generate one with the following command:
+openssl req -new -x509 -days 3652 -nodes -out sp.crt -keyout sp.key
+The sp.key is the private key, it is a separate file. sp.crt is this file and it will have the new x509 cert
