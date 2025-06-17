@@ -1,7 +1,7 @@
 [project]
 name = "yvideo_pg"
 version = "0.1.0"
-description = "Add your description here"
+description = "Django admin for old clojure/react Y-video"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [

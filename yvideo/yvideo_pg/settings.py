@@ -12,6 +12,12 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 
 from pathlib import Path
 
+from .config import DB_NAME
+from .config import DB_USER
+from .config import DB_PASS
+from .config import DB_HOST
+from .config import DB_PORT
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -76,9 +82,11 @@ WSGI_APPLICATION = 'yvideo_pg.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            "service": "yvideodb",
-            "passfile": Path().home() / ".pgpass"},
+        'NAME': DB_NAME,
+        'USER': DB_USER,
+        'PASSWORD': DB_PASS,
+        'HOST': DB_HOST,
+        'PORT': DB_PORT,
     }
 }
 

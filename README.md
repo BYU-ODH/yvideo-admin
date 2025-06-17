@@ -1,2 +1,2 @@
-# yvideo-django
-Django/HTMX rewrite of yvideo
+# yvideo-admin
+Django admin for old clojure/react Y-video
