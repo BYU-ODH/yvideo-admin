@@ -5,5 +5,5 @@ docker build \
     .
 docker run \
     --volume .:/workspaces/yvideo-admin \
-    --restart=always
+    --restart=always \
     yvideo-admin
